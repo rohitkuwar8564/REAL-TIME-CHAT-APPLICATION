@@ -2,7 +2,7 @@ import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import createTokenAndSaveCookie from "../jwt/generateToken.js";
 export const signup = async (req, res) => {
-  const { name, email, password, confirmPassword } = req.body;
+  const {  fullname, email, password, confirmPassword } = req.body;
   try {
     if (password !== confirmPassword) {
       return res.status(400).json({ error: "Passwords do not match" });
@@ -14,7 +14,7 @@ export const signup = async (req, res) => {
     // Hashing the password
     const hashPassword = await bcrypt.hash(password, 10);
     const newUser = await new User({
-      name,
+      fullname,
       email,
       password: hashPassword,
     });
@@ -25,7 +25,7 @@ export const signup = async (req, res) => {
         message: "User created successfully",
         user: {
           _id: newUser._id,
-          name: newUser.name,
+          fullname: newUser.fullname,
           email: newUser.email,
         },
       });
