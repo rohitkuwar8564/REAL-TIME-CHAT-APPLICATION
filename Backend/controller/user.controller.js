@@ -2,7 +2,8 @@ import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import createTokenAndSaveCookie from "../jwt/generateToken.js";
 export const signup = async (req, res) => {
-  const { name, email, password, confirmPassword } = req.body;
+  const { fullname, email, password, confirmPassword } = req.body;
+
   try {
     if (password !== confirmPassword) {
       return res.status(400).json({ error: "Passwords do not match" });
