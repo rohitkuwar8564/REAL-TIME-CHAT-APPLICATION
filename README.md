@@ -43,14 +43,6 @@ In today’s world, chat applications have become an essential part of daily com
    - The project has been deployed on **Render** for backend hosting and **Vercel/Netlify** (optional) for frontend hosting.  
    - Live link is provided for real-time testing.  
 
-### 🔹 Technologies Used:
-- **Frontend:** React.js, HTML, CSS  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB (Mongoose)  
-- **Real-Time Communication:** Socket.io  
-- **Authentication:** JWT (JSON Web Token), bcrypt for password hashing  
-- **Deployment:** Render  
-
 ---
 
 ## 🛠️ Working of the Application  
@@ -67,14 +59,14 @@ This project not only demonstrates real-time functionality but also covers essen
 
 ## 📸 Screenshots  
 
-### 🔹 Signup Page  
-![Signup](/mnt/data/df71a6d3-0df8-49f3-95f1-31a6341633b6.png)  
+### 🔹 Home Page  
+![Home](home.png)  
 
 ### 🔹 Login Page  
-![Login](/mnt/data/2746fa9f-0ed4-4383-8abb-e64daef07bb9.png)  
+![Login](login.png)  
 
-### 🔹 Chat Dashboard  
-![Chat Dashboard](/mnt/data/702a5b58-541e-452c-a870-a6da1cd2b9b7.png)  
+### 🔹 Signup Page  
+![Signup](sign.png)  
 
 ---
 
@@ -88,5 +80,3 @@ This project not only demonstrates real-time functionality but also covers essen
 Through this project, I gained a deep understanding of how **real-time applications** work and how crucial WebSockets are in modern web development. I also learned how to integrate multiple technologies like **MERN + Socket.io** into a single cohesive system.  
 
 This project has improved my skills in **full-stack development**, **API handling**, **database design**, and **real-time communication systems**. The knowledge and practical exposure obtained will help me in building advanced web applications in the future.  
-
-
